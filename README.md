@@ -13,6 +13,8 @@ This action matches patients in one dataset file to a specified number of matche
 
 Input dataset files can be in `.csv`, `.csv.gz` or `.arrow` format.
 
+The documentation below refers to use of matching as a reusable action. To use the python package in a 
+python script or from the command line, please see the [alternative usage documentation](EXTRA_DOCS.md).
 
 ## Usage
 
