@@ -1,10 +1,9 @@
 > [!NOTE] 
-> The [`opensafely-matching` python package](https://pypi.org/project/opensafely-matching/) has been deprecated. If you are using this package
-> in an OpenSAFELY study, we recommend that you use the [matching reusable action](https://actions.opensafely.org/matching),
-> as documented below.
+> The [`opensafely-matching` python package](https://pypi.org/project/opensafely-matching/) is no
+> longer recommended for use in OpenSAFELY studies. We recommend that you use the 
+[matching reusable action](https://actions.opensafely.org/matching), as documented below.
 >
-> If you are using the python package, you can find the documentation for previous releases by
-> switching to the relevant tag in this repo. For example, [v1.0.0](https://github.com/opensafely-actions/matching/tree/v1.0.0).
+> The python package is still [available for use](EXTRA_DOCS.md) in python scripts or as a command line tool.
 
 
 # Matching: Simple categorical and scalar variable matching
