@@ -12,6 +12,8 @@ setup(
     packages=find_namespace_packages(exclude=["tests"]),
     url="https://github.com/opensafely/matching",
     description="Command line tool for matching cases to controls",
+    long_description=open("EXTRA_DOCS.md").read(),
+    long_description_content_type="text/markdown",
     author="OpenSAFELY",
     license="GPLv3",
     author_email="tech@opensafely.org",
