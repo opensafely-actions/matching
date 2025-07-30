@@ -1,4 +1,4 @@
-name: Tag repo; build and publish assets
+name: Build and publish python package
 on:
   # this allows us to trigger manually
   # Note: we are not automatically publishing to pypi anymore. This workflow is retained
