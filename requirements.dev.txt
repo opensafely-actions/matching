@@ -24,7 +24,7 @@ packaging==25.0
     #   pytest
 pathspec==0.12.1
     # via mypy
-pip-tools==7.4.1
+pip-tools==7.5.0
     # via -r requirements.dev.in
 pluggy==1.6.0
     # via pytest
