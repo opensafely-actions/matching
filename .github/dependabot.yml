@@ -12,6 +12,12 @@ updates:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
+    # allow only minor/patch for ruff, to pin to <v0.16
+    allow:
+      - dependency-name: "ruff"
+        update-types:
+          - "version-update:semver-minor"
+          - "version-update:semver-patch"
 
   - package-ecosystem: "github-actions"
     directory: "/"
