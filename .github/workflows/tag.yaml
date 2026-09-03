@@ -5,7 +5,6 @@ permissions:
   contents: write
 
 on:
-  workflow_dispatch:
   workflow_run:
     workflows:
       - CI
@@ -17,13 +16,11 @@ on:
 concurrency: tag-new-version-group
 
 jobs:
-  if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
+  
   tag-new-version:
-    needs: [ci]
     runs-on: ubuntu-latest
 
-    if: github.ref == 'refs/heads/main'
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - uses: actions/checkout@v7
