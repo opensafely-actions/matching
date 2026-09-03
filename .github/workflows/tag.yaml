@@ -6,15 +6,18 @@ permissions:
 
 on:
   workflow_dispatch:
-  push:
+  workflow_run:
+    workflows:
+      - CI
     branches:
       - main
+    types:
+      - completed
 
 concurrency: tag-new-version-group
 
 jobs:
-  ci:
-    uses: ./.github/workflows/main.yaml
+  if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
   tag-new-version:
     needs: [ci]
