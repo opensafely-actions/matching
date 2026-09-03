@@ -23,7 +23,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Tag new version
         uses: mathieudutour/github-tag-action@d745f2e74aaf1ee82e747b181f7a0967978abee0
         with:
