@@ -14,7 +14,7 @@ jobs:
       latest_tag: ${{ steps.tag.outputs.latest_tag }}
       latest_published: ${{ steps.package.outputs.latest_published }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Get latest tag
@@ -32,7 +32,7 @@ jobs:
     if: needs.find-latest.outputs.latest_tag != needs.find-latest.outputs.latest_published
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     - name: Set up Python 3.10
       uses: actions/setup-python@v5
       with:
