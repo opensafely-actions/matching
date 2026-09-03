@@ -7,4 +7,5 @@ pip-tools
 pytest
 pyyaml
 mypy
-ruff
+# Pin ruff as v0.16.0 introduces lots of new rules that break things
+ruff<0.16.0

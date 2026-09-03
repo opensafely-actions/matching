@@ -2,7 +2,7 @@
 
 ## System requirements
 
-Requires Python 3.8+
+Requires Python 3.10+
 
 Install with:
 

@@ -2,7 +2,6 @@
 
 import copy
 from datetime import datetime
-from typing import Optional
 
 import pandas as pd
 
@@ -196,7 +195,7 @@ def greedily_pick_matches(
     return matched_rows.index
 
 
-def get_date_offset(offset: tuple[str, str, int]) -> Optional[pd.DataFrame]:
+def get_date_offset(offset: tuple[str, str, int]) -> pd.DataFrame | None:
     """
     Converts the tuple of unit and length given by match_index_date_offset
     to return a pr.DateOffset of the appropriate length.
