@@ -40,7 +40,7 @@ generate_controls:
       dataset: output/controls.arrow
 ```
 
-Then, the following action uses the `matching`reusable action to perform the matching and generate output files. Remember to replace [version] with a version of the `match` reusable action (e.g. v1.1.0):
+Then, the following action uses the `matching`reusable action to perform the matching and generate output files. Remember to replace [version] with a version of the `match` reusable action (e.g. v1.2.5):
 
 ```yaml
 match:

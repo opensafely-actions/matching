@@ -5,6 +5,17 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    reviewers:
-      - "madwort"
-    open-pull-requests-limit: 20
+    cooldown:
+      default-days: 7
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7

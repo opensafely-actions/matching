@@ -1,4 +1,4 @@
-version: "4.0"
+version: "5.0"
 
 actions:
   # These actions are copied-and-pasted into README.md for user-facing documentation.
