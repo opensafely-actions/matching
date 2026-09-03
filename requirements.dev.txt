@@ -28,7 +28,7 @@ pip-tools==7.4.1
     # via -r requirements.dev.in
 pluggy==1.6.0
     # via pytest
-pygments==2.19.2
+pygments==2.20.0
     # via pytest
 pyproject-hooks==1.2.0
     # via
