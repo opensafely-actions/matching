@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Tag new version
-        uses: mathieudutour/github-tag-action@d745f2e74aaf1ee82e747b181f7a0967978abee0
+        uses: mathieudutour/github-tag-action@a22cf08638b34d5badda920f9daf6e72c477b07b
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_annotated_tag: true
