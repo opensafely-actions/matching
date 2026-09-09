@@ -8,4 +8,4 @@ pytest
 pyyaml
 mypy
 # Pin ruff as v0.16.0 introduces lots of new rules that break things
-ruff<0.16.0
+ruff<0.17.0
